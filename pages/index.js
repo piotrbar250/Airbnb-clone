@@ -17,9 +17,7 @@ export default function Home({ exploreData, cardsData }) {
         <title>Airbnb</title>
       </Head>
 
-      {/* Header */}
       <Header />
-      {/* Banner */}
       <Banner />
 
       <main className='max-w-7xl mx-auto px-8 sm:px-16'>
@@ -60,13 +58,6 @@ export default function Home({ exploreData, cardsData }) {
 }
 
 export async function getStaticProps() {
-  // const exploreData = await fetch('http://localhost:5004/api/locations').then(
-  //   (res) => res.json()
-  // );
-
-  // const cardsData = await fetch('http://localhost:5004/api/types').then(
-  //   res => res.json()
-  // )  
   
   const exploreData = await fetch('https://www.jsonkeeper.com/b/4G1G').then(
     (res) => res.json()
