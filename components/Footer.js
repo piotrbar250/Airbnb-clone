@@ -40,7 +40,14 @@ function Footer() {
         <p>Community forum</p>
         <p>Hosting responsibly</p>
       </div>
+
+      <div className='flex justify-center items-center space-x-1 bg-gray-100 text-gray-800 text-sm pb-3'>
+        <p>Clone made with </p>
+        <HeartIcon className='h-4 text-red-400'/>
+        <p> by Piotr Baranowski</p>
+      </div>
     </div>
+    
   )
 }
 
